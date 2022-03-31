@@ -1,0 +1,19 @@
+.circles{
+    margin-top: 100px;
+}
+
+.carousel-item >img{
+    height: 600px;
+    width: 100%;
+}
+
+.head-circles{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+
+.circle-header{
+    text-align: center;
+}
