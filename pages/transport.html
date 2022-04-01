@@ -81,17 +81,17 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">LogiBox</a>
+        <a class="navbar-brand" href="../index.html">LogiBox</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <a class="nav-link active" aria-current="page" href="#">LogiBox</a>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="pages/cargo.html">Грузы</a>
+              <a class="nav-link" href="cargo.html">Грузы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/transport.html">Транспорт</a>
+              <a class="nav-link" href="transport.html">Транспорт</a>
             </li>
           </ul>
 
@@ -157,10 +157,28 @@
     </div>
 
     <div class="container reg-form-wraper">
-      <form class="find-cargo-form" action="">
+      <form class="find-cargo-form" action="" method="get">
+        <h2 class="centered-text">Поиск Транспорта</h2>
         <div class="row">
-          <input type="text" class="col-lg-6">
-          <input type="text" class="col-lg-6">
+          <div class="container col-lg-5">
+            <span>Откуда</span><br>
+            <input type="text" class="city-imput col-md-8">
+            <input type="text" class="radius-imput col-md-3" placeholder="радиус, км">
+          </div>
+
+          <div class="container col-lg-5">
+            <span>Куда</span><br>
+            <input type="text" class="city-imput col-md-8">
+            <input type="text" class="radius-imput col-md-3" placeholder="радиус, км">
+          </div>
+
+          <div class="container col-lg-2">
+            <span>Дата</span><br>
+            <input type="date">
+          </div>
+          <div class="col-lg-2" style="margin-top: 10px;">
+            <button style="border-radius: 5px;" type="submit" class="btn-success">Найти Транспорт</button>
+          </div>
         </div>
       </form>
     </div>
